@@ -1,10 +1,10 @@
-var convert = require('../lib')
-  , assert = require('assert')
-  , tests = {};
+var convert = require('../lib'),
+  assert = require('assert'),
+  tests = {};
 
 tests['list'] = function () {
-  var list = convert().list()
-    , firstItem = list[0];
+  var list = convert().list(),
+    firstItem = list[0];
 
   assert(list.length > 0);
   assert(firstItem.hasOwnProperty("abbr"));
@@ -20,10 +20,10 @@ tests['list'] = function () {
 };
 
 tests['list by measure'] = function () {
-  var full     = convert().list()
-    , measures = convert().measures();
+  var full = convert().list(),
+    measures = convert().measures();
 
-  measures.map(function(measure) {
+  measures.map(function (measure) {
     var list = convert().list(measure);
 
     assert(list.length > 0);
