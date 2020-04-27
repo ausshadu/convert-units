@@ -153,6 +153,7 @@ convert().list("mass");
 - ha
 - km2
 - in2
+- yd2
 - ft2
 - ac
 - mi2
@@ -173,10 +174,18 @@ convert().list("mass");
 - mm3
 - cm3
 - ml
+- cl
+- dl
 - l
 - kl
 - m3
 - km3
+- krm
+- tsk
+- msk
+- kkp
+- glas
+- kanna
 - tsp
 - Tbs
 - in3
@@ -226,7 +235,7 @@ convert().list("mass");
 - ft3/h
 - yd3/s
 - yd3/min
-- yd3/h'
+- yd3/h
 
 ### Temperature
 
