@@ -365,7 +365,7 @@ convert().list("mass");
 - GWh
 - J
 - kJ
-- BTU
+- BTU (ISO)
 
 ### Reactive Energy
 
