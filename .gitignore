@@ -6,3 +6,6 @@ scratch
 
 *.log
 *.swp
+
+
+lib/mock.js

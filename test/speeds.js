@@ -16,6 +16,14 @@ tests['m/h to m/h'] = function () {
   assert.strictEqual(convert(6).from('m/h').to('m/h'), 6);
 };
 
+// tests['m/h to ft/min'] = function () {
+//   assert.strictEqual(convert(1).from('m/h').to('ft/min'), 88);
+// };
+
+// tests['m/h to m/min'] = function () {
+//   assert.strictEqual(convert(100).from('m/h').to('m/min'), 1.66667);
+// };
+
 tests['m/h to knot'] = function () {
   var expected = 1.73795
   var actual = convert(2).from('m/h').to('knot');

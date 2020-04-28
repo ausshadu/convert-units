@@ -276,6 +276,8 @@ convert().list("mass");
 - m/h
 - knot
 - ft/s
+- ft/min
+- m/min
 
 ### Pace
 
