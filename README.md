@@ -168,6 +168,8 @@ convert().list("mass");
 - lb
 - mt
 - t
+- grain
+- usgal
 
 ### Volume
 
@@ -296,6 +298,12 @@ convert().list("mass");
 - torr
 - psi
 - ksi
+- kgf/cm2
+- lb/in2
+- oz/in2
+- atm
+- inHg
+- ftH20
 
 ### Digital
 
