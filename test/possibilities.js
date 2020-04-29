@@ -126,7 +126,7 @@ tests['apparent power possibilities'] = function () {
 
 tests['energy possibilities'] = function () {
   var actual = convert().possibilities('energy'),
-    expected = ['BTU', 'Wh', 'mWh', 'kWh', 'MWh', 'GWh', 'J', 'kJ'];
+    expected = ['BTU', 'Wh', 'mWh', 'kWh', 'MWh', 'GWh', 'J', 'kJ', 'kCal/h', 'Hp (Est.)', 'RT'];
   assert.deepEqual(actual.sort(), expected.sort());
 };
 
@@ -177,7 +177,7 @@ tests['all possibilities'] = function () {
     // Please keep these sorted for maintainability
     ,
     expected = [
-      'A', 'arcmin', 'arcsec', 'B', 'BTU', 'C', 'F', 'R', 'GB', 'Gb', 'K', 'KB', 'Kb', 'MB', 'MPa', 'Mb', 'N', 'Pa', 'TB', 'Tb', 'ac', 'b', 'bar', 'c', 'cl', 'cl/s', 'cm', 'cm2', 'cm3', 'cm3/s', 'cup', 'cup/s', 'd', 'deg', 'deg/s', 'dl', 'dl/s', 'ea', 'dz', 'fl-oz', 'fl-oz/h', 'fl-oz/min', 'fl-oz/s', 'ft-us', 'ft', 'fathom', 'ft-cd', 'ft/s', 'ft/min', 'm/min', 'ft2', 'ft3', 'ft3/h', 'ft3/min', 'ft3/s', 'g', 'g-force', 'gal', 'gal/h', 'gal/min', 'gal/s', 'glas', 'grad', 'GHz', 'GVA', 'GVAR', 'GVARh', 'GW', 'GWh', 'h', 'hPa', 'ha', 'Hz', 'in', 'in2', 'in3', 'in3/h', 'in3/min', 'in3/s', 'J', 'kA', 'kPa', 'kanna', 'kg', 'kkp', 'kJ', 'kN', 'kl', 'kl/h', 'kl/min', 'kl/s', 'km', 'km/h', 'km2', 'km3', 'km3/s', 'knot', 'krm', 'ksi', 'kHz', 'kV', 'kVA', 'kVAR', 'kVARh', 'kW', 'kWh', 'l', 'l/h', 'l/min', 'l/s', 'lb', 'lbf', 'lx', 'm', 'm/h', 'm/s', 'm/s2', 'm2', 'm3', 'm3/h', 'm3/min', 'm3/s', 'mA', 'mC', 'mcg', 'mg', 'mi', 'mi2', 'min', 'min/km', 'min/mi', 'ml', 'ml/s', 'mm', 'mm2', 'mm3', 'mm3/s', 'month', 'ms', 'msk', 'mt', 'mu', 'nC', 'mHz', 'MHz', 'mV', 'mVA', 'MVA', 'mVAR', 'MVAR', 'mVARh', 'MVARh', 'mW', 'MW', 'mWh', 'MWh', 'nMi', 'ns', 'oz', 'pC', 'pnt', 'pnt/h', 'pnt/min', 'pnt/s', 'ppb', 'ppm', 'ppq', 'ppt', 'psi', 'qt', 'qt/s', 'rad', 'rad/s', 'rpm', 's', 's/m', 's/ft', 't', 'Tbs', 'Tbs/s', 'THz', 'torr', 'tsk', 'tsp', 'tsp/s', 'V', 'VA', 'VAR', 'VARh', 'W', 'week', 'Wh', 'yd', 'yd2', 'yd3', 'yd3/h', 'yd3/min', 'yd3/s', 'year', 'μC'
+      'A', 'arcmin', 'arcsec', 'B', 'BTU', 'C', 'kCal/h', 'Hp (Est.)', 'RT', 'F', 'R', 'GB', 'Gb', 'K', 'KB', 'Kb', 'MB', 'MPa', 'Mb', 'N', 'Pa', 'TB', 'Tb', 'ac', 'b', 'bar', 'c', 'cl', 'cl/s', 'cm', 'cm2', 'cm3', 'cm3/s', 'cup', 'cup/s', 'd', 'deg', 'deg/s', 'dl', 'dl/s', 'ea', 'dz', 'fl-oz', 'fl-oz/h', 'fl-oz/min', 'fl-oz/s', 'ft-us', 'ft', 'fathom', 'ft-cd', 'ft/s', 'ft/min', 'm/min', 'ft2', 'ft3', 'ft3/h', 'ft3/min', 'ft3/s', 'g', 'g-force', 'gal', 'gal/h', 'gal/min', 'gal/s', 'glas', 'grad', 'GHz', 'GVA', 'GVAR', 'GVARh', 'GW', 'GWh', 'h', 'hPa', 'ha', 'Hz', 'in', 'in2', 'in3', 'in3/h', 'in3/min', 'in3/s', 'J', 'kA', 'kPa', 'kanna', 'kg', 'kkp', 'kJ', 'kN', 'kl', 'kl/h', 'kl/min', 'kl/s', 'km', 'km/h', 'km2', 'km3', 'km3/s', 'knot', 'krm', 'ksi', 'kHz', 'kV', 'kVA', 'kVAR', 'kVARh', 'kW', 'kWh', 'l', 'l/h', 'l/min', 'l/s', 'lb', 'lbf', 'lx', 'm', 'm/h', 'm/s', 'm/s2', 'm2', 'm3', 'm3/h', 'm3/min', 'm3/s', 'mA', 'mC', 'mcg', 'mg', 'mi', 'mi2', 'min', 'min/km', 'min/mi', 'ml', 'ml/s', 'mm', 'mm2', 'mm3', 'mm3/s', 'month', 'ms', 'msk', 'mt', 'mu', 'nC', 'mHz', 'MHz', 'mV', 'mVA', 'MVA', 'mVAR', 'MVAR', 'mVARh', 'MVARh', 'mW', 'MW', 'mWh', 'MWh', 'nMi', 'ns', 'oz', 'pC', 'pnt', 'pnt/h', 'pnt/min', 'pnt/s', 'ppb', 'ppm', 'ppq', 'ppt', 'psi', 'qt', 'qt/s', 'rad', 'rad/s', 'rpm', 's', 's/m', 's/ft', 't', 'Tbs', 'Tbs/s', 'THz', 'torr', 'tsk', 'tsp', 'tsp/s', 'V', 'VA', 'VAR', 'VARh', 'W', 'week', 'Wh', 'yd', 'yd2', 'yd3', 'yd3/h', 'yd3/min', 'yd3/s', 'year', 'μC'
     ];
 
   try {

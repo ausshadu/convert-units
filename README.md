@@ -368,6 +368,9 @@ convert().list("mass");
 - J
 - kJ
 - BTU (ISO)
+- kCal/h
+- Hp (Est.)
+- RT
 
 ### Reactive Energy
 

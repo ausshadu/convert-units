@@ -18,7 +18,7 @@ declare module "convert-units" {
     type uPower = "W" | "mW" | "kM" | "MW" | "GW";
     type uApparentPower = "VA" | "mVA" | "kVA" | "MVA" | "GVA"; // Apparent Power
     type uReactivePower = "VAR" | "mVAR" | "kVAR" | "MVAR" | "GVAR"; // Reactive Power
-    type uEnergy = "Wh" | "mWh" | "kWh" | "MWh" | "GWh" | "J" | "kJ" | "BTU"; // Energy
+    type uEnergy = "Wh" | "mWh" | "kWh" | "MWh" | "GWh" | "J" | "kJ" | "BTU" | 'kCal/h' | 'Hp (Est.)' | 'RT'; // Energy
     type uReactiveEnergy = "VARh" | "mVARh" | "kVARh" | "MVARh" | "GVARH"; // Reactive Energy
     type uAngle = "deg" | "rad" | "grad" | "arcmin" | "arcsec"; // Angle
     type uCharge = "c" | "mC" | "μC" | "nC" | "pC"; // Charge
