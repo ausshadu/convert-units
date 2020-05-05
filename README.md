@@ -230,7 +230,8 @@ convert().list("mass");
 - pnt/h
 - qt/s
 - gal/s
-- gal/min
+- gal/min (US)
+- b-gal/min (UK)
 - gal/h
 - ft3/s
 - ft3/min
